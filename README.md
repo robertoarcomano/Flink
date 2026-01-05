@@ -47,4 +47,5 @@ Note: you can also connect to the GUI, upload the jar file and launch it specify
 1. Arguments
 2. Parallelism
 
-
+### Completed Jobs
+<img src=completed_jobs.jpg>
