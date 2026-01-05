@@ -14,12 +14,10 @@ public class WordCountToFile {
         }
 
         String inputPath = args[0];
-        String outputPath = "/data/output_file.txt";
+        String outputPath = "/data/output_file_" + System.currentTimeMillis() + ".txt";
 
         // ambiente di esecuzione
         final ExecutionEnvironment env = ExecutionEnvironment.getExecutionEnvironment();
-
-        env.setParallelism(2);
 
         // sorgente: file di testo
         DataSet<String> text = env.readTextFile(inputPath);
